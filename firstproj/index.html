@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="../mathproj/styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Initial JavaScript</title>
+</head>
+
+<body>
+<header class="w3-panel" id="head">
+    <h1>JavaScript - 1st Attempt - Yikes!</h1>
+</header>
+
+<!-- Display the date and time -->
+<div class="w3-panel w3-pale-red" id="date">
+    <h2>Date?   Time?</h2>
+    <button type="button" class="w3-btn w3-grey"
+            onclick="document.getElementById('time').innerHTML=Date()">
+        Check the date by clicking here.
+    </button>
+
+    <p id="time"></p>
+</div>
+
+<!-- Display a quotation: two in this case -->
+<div class="w3-panel w3-pale-blue" id="quote">
+    <h2>A couple of quotations!</h2>
+    <button type="button" class="w3-btn w3-indigo"
+            onclick="document.getElementById('rquote').innerHTML =
+            'It is only a matter of time until time becomes a matter!  - Luke Weber'">
+        Random Quote
+    </button>
+    <p id="rquote"></p>
+
+    <button type="button" class="w3-btn w3-indigo"
+            onclick="document.getElementById('fquote').innerHTML =
+            'Be yourself; everyone else is already taken.  - Oscar Wilde'">
+        Famous Quote
+    </button>
+    <p id="fquote"></p>
+</div>
+
+<!-- Make a panel diappear and reappear -->
+<div class="w3-panel w3-pale-yellow" id="disappear">
+    <h2>Make me disappear</h2>
+    <button type="button" class="w3-btn-floating w3-indigo"
+            onclick="document.getElementById('disappear').style.display='none';
+    document.getElementById('reappear').style.display='block';">-
+    </button>
+</div>
+<div class="w3-panel">
+    <button type="button" id="reappear" class="w3-btn-floating w3-indigo" style="display:none;"
+            onclick="document.getElementById('disappear').style.display='block'">+
+    </button>
+</div>
+
+<!-- Change the color of a panel -->
+<div class="w3-panel" id="color1" style="background-color: palegreen">
+    <h2>I change colors</h2>
+    <button type="button" class="w3-btn w3-green"
+            onclick="document.getElementById('color1').style.background='darkgreen'">
+    Click to change
+    </button>
+</div>
+
+</body>
+</html>
